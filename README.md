@@ -10,7 +10,7 @@ python -m pip install -r ./requirements.txt
 There are two required args. The repo and the folder.  
 
 The repo will be `username/reponame` ex: `nordgaren/Github-Folder-Downloader` and the folder will be the path from the root directory of that repo, 
-ex: `.idea/inspectionProfiles` with no slash on the end  
+ex: `.idea/inspectionProfiles` with no slash on the end. The folder structure of the repo will be recreated, but only the files in the folder specify will be downloaded.  
 
 Example command: 
 ```sh
