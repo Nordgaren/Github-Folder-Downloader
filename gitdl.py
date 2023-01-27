@@ -4,12 +4,12 @@ import requests
 from argparse import ArgumentParser, Namespace
 
 
-def download_repo(repo: Repository, folder: str, out: str, recursive: bool):
+def download_folder(repo: Repository, folder: str, out: str, recursive: bool):
     contents = repo.get_contents(folder)
     for c in contents:
         if c.download_url is None:
             if recursive:
-                download_repo(repo, c.path, out, recursive)
+                download_folder(repo, c.path, out, recursive)
             continue
         r = requests.get(c.download_url)
         output_path = f'{out}/{c.path}'
@@ -32,4 +32,4 @@ if __name__ == '__main__':
     args = get_args()
     g = Github()
     repo = g.get_repo(args.repo)
-    download_repo(repo, args.folder, args.out, args.recursive)
+    download_folder(repo, args.folder, args.out, args.recursive)
