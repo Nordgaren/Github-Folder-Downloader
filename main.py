@@ -32,4 +32,4 @@ if __name__ == '__main__':
     args = get_args()
     g = Github()
     repo = g.get_repo(args.repo)
-    download_repo( repo, args.folder, args.out, args.recursive)
+    download_repo(repo, args.folder, args.out, args.recursive)
