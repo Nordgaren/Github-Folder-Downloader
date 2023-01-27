@@ -13,5 +13,5 @@ ex: `.idea/inspectionProfiles` with no slash on the end
 Example command: `python gitdl.py nordgaren/Github-Folder-Downloader .idea/inspectionProfiles`  
 
 The other two optional arguments are:  
-`-o` or `--output` which lets you specify an output path (the defualt is the current directory + `downloads`  
+`-o` or `--output` which lets you specify an output path (the defualt is `./downloads/`)  
 `-r` or `--recursive` which tells the script to recursively download all subfolders, as well.  
