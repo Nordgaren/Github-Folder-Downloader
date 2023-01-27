@@ -10,6 +10,8 @@ There are two required args. The repo and the folder.
 The repo will be `username/reponame` ex: `nordgaren/Github-Folder-Downloader` and the folder will be the path from the root directory of that repo, 
 ex: `.idea/inspectionProfiles` with no slash on the end  
 
+Example command: `python gitdl.py nordgaren/Github-Folder-Downloader .idea/inspectionProfiles`  
+
 The other two optional arguments are:  
 `-o` or `--output` which lets you specify an output path (the defualt is the current directory + `downloads`  
 `-r` or `--recursive` which tells the script to recursively download all subfolders, as well.  
