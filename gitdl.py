@@ -9,7 +9,7 @@ def download_repo(repo: Repository, folder: str, out: str, recursive: bool):
     for c in contents:
         if c.download_url is None:
             if recursive:
-                download_repo(out, repo, c.path, recursive)
+                download_repo(repo, c.path, out, recursive)
             continue
         r = requests.get(c.download_url)
         output_path = f'{out}/{c.path}'
