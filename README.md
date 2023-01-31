@@ -13,7 +13,7 @@ The repo will be `username/reponame` ex: `nordgaren/Github-Folder-Downloader` an
 ex: `.idea/inspectionProfiles` with no slash on the end. The folder structure of the repo will be recreated, but only the files in the folder specify will be downloaded.  
 
 ## Usage: 
-### gitdl.py [-h] [-o] [-r] [-f] repo path
+### gitdl.py [-h] [-o OUT] [-r] [-f] repo path
 ```
 positional arguments:
   repo               The repo where the file or folder is stored
