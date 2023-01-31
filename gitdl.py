@@ -9,7 +9,7 @@ def download(c: ContentFile, out: str):
     output_path = f'{out}/{c.path}'
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'wb') as f:
-        print(f'downloading {output_path}')
+        print(f'downloading {c.path} to {out}')
         f.write(r.content)
 
 
@@ -32,7 +32,7 @@ def get_args() -> Namespace:
     parser = ArgumentParser()
     parser.add_argument('repo', help='The repo where the file or folder is stored')
     parser.add_argument('path', help='The folder or file you want to download')
-    parser.add_argument('-o', '--out', default='downloads', required=False, help='Path to folder you want to downoad '
+    parser.add_argument('-o', '--out', default='downloads', required=False, help='Path to folder you want to download '
                                                                                  'to.')
     parser.add_argument('-r', '--recursive', action='store_true', help='Recursively download directories. Folder '
                                                                        'downloads, only!')

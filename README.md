@@ -21,7 +21,7 @@ positional arguments:
 
 options:
   -h, --help         show this help message and exit
-  -o OUT, --out OUT  path to folder you want to downoad to.
+  -o OUT, --out OUT  path to folder you want to download to.
   -r, --recursive    Recursively download directories. Folder downloads, only!
   -f, --file         set flag to download a single file, instead of a folder.
 ```
