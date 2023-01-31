@@ -21,9 +21,10 @@ positional arguments:
 
 options:
   -h, --help         show this help message and exit
-  -o OUT, --out OUT  path to folder you want to download to.
+  -o OUT, --out OUT  Path to folder you want to download to. Default is
+                     current folder + 'downloads'
   -r, --recursive    Recursively download directories. Folder downloads, only!
-  -f, --file         set flag to download a single file, instead of a folder.
+  -f, --file         Set flag to download a single file, instead of a folder.
 ```
 
 Folder - path must not end with a slash.

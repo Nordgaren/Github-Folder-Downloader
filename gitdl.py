@@ -33,7 +33,8 @@ def get_args() -> Namespace:
     parser.add_argument('repo', help='The repo where the file or folder is stored')
     parser.add_argument('path', help='The folder or file you want to download')
     parser.add_argument('-o', '--out', default='downloads', required=False, help='Path to folder you want to download '
-                                                                                 'to.')
+                                                                                 'to. Default is current folder + '
+                                                                                 '\'downloads\'')
     parser.add_argument('-r', '--recursive', action='store_true', help='Recursively download directories. Folder '
                                                                        'downloads, only!')
     parser.add_argument('-f', '--file', action='store_true', help='Set flag to download a single file, instead of a '
